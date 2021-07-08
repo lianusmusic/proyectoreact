@@ -1,17 +1,21 @@
 import React from "react";
 import "./Navbar.css";
+import Cart from "../Cart/CartWidget";
 
-const Navbar = (props)=> {
+let Navbar = (props)=> {
     console.log(props);
     return(
         <>
         <nav className="barra">
             <h1> {props.nombreDeLaTienda}</h1>
-            <h1> {props.subtitulo}</h1>
-            
-        {/* <button onClick={props.darBienvenida}>Saludame</button> */}
+            <h2> {props.subtitulo}</h2>
+            <p className ="navMenu"> About TCA </p>
+            <p className ="navMenu">Digital Education</p>
+            <button onClick  = {props.desplegableProductos} className="loginBut">Login</button>
+            <button onClick  = {props.desplegableProductos} className="loginBut">Sign Up</button>
+            <Cart/>
         </nav>
-        <button onClick  = {props.desplegableProductos} className="desplegable">Productos</button>
+       
         </>
     );
 };

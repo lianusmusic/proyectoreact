@@ -1,9 +1,12 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
+import Cart from "./components/Cart/CartWidget";
+
 
 function App() {
   const darBienvenida = () => alert("Bienvenida a nuestra Tienda!!");
   let desplegableProductos = () =>alert("quiero un desplegable");
+  
 
   return (
     <>
@@ -14,6 +17,9 @@ function App() {
         productos={desplegableProductos}
         darBienvenida={darBienvenida} //entre llaves porque es una funcion JS//
         />
+        <Cart/>
+
+
     <p>HOLA MUNDO!</p>    
     </div>
     </>
