@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import Cart from "./components/Cart/CartWidget";
+import ItemCount from './components/Itemcount/ItemCount';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         darBienvenida={darBienvenida} //entre llaves porque es una funcion JS//
         />
         <Cart/>
-
+        <ItemCount/>
 
     <p>HOLA MUNDO!</p>    
     </div>
